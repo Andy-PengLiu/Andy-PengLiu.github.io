@@ -11,12 +11,17 @@
       .wordmark span { display: none; }
       nav { margin-left: auto; gap: 30px; font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 400; }
       .teaching-page { max-width: 1280px; margin: 0 auto; padding: 11vh 3.5vw; }
-      .teaching-page h1 { font-size: clamp(54px, 7vw, 96px); }
+      .teaching-page h1 { font-size: clamp(44px, 5.1vw, 72px); white-space: nowrap; }
       .teaching-page p { max-width: 650px; margin: 28px 0 0; color: #52605a; font-size: 16px; line-height: 1.7; }
+      .course-list { margin-top: 78px; border-top: 1px solid #172d2a; }
+      .course-item { padding: 28px 0; border-bottom: 1px solid #d7d8d0; }
+      .course-item h2 { font-size: clamp(28px, 3.4vw, 48px); }
+      .course-item p { margin: 12px 0 0; }
+      @media (max-width: 720px) { .teaching-page h1 { white-space: normal; } }
     </style>
   </head>
   <body>
-    <header class="site-header"><a class="wordmark" href="index.html"><strong>Andy Peng Liu</strong></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#research">Research</a><a href="teaching.html">Teaching</a></nav></header>
-    <main class="teaching-page"><p class="eyebrow">Teaching</p><h1>Teaching information forthcoming.</h1><p>Course descriptions, syllabi, and teaching materials will be added here.</p></main>
+    <header class="site-header"><a class="wordmark" href="index.html"><strong>Andy Liu</strong></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="journey.html">Journey</a></nav></header>
+    <main class="teaching-page"><h1>Courses &amp; Supervision</h1><section class="course-list"><article class="course-item"><h2>Production and Operations Management</h2><p>Undergraduate course.</p></article><article class="course-item"><h2>Undergraduate Thesis Supervision</h2><p>Gearbox design.</p></article></section></main>
   </body>
 </html>

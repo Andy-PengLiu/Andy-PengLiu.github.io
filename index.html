@@ -18,28 +18,39 @@
       .intro-role { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; color: #527868; }
       .intro-details { margin-top: 28px; font-size: 15px; line-height: 1.7; color: #52605a; }
       .intro-details p { margin: 0; }
+      .bio-row .school-link { color: #527868; text-decoration: underline; text-underline-offset: 3px; }
       .intro-bio { max-width: 690px; margin: 22px 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7; color: #52605a; }
       .intro-links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 15px; line-height: 1.7; color: #52605a; }
       .intro-links a { text-decoration: underline; text-underline-offset: 3px; }
       .portrait-placeholder { min-height: 390px; display: flex; align-items: flex-end; padding: 22px; background: #e5e8e1; color: #66736b; font-size: 11px; text-transform: uppercase; letter-spacing: .11em; }
       .bio-row { max-width: 1280px; width: 100%; margin: 62px auto 24px; font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.55; color: #30443b; }
       .bio-row p { max-width: 100%; margin: 0; }
+      .research-section { padding: 72px 3.5vw; }
+      .research-section > .section-label { max-width: 1280px; margin: 0 auto 30px; padding-left: 0; transform: translateX(-6vw); }
+      .research-section > .section-label span:first-child { color: #172d2a; font-family: Georgia, 'Times New Roman', serif; font-size: 18px; font-weight: 400; letter-spacing: -.025em; text-transform: none; }
+      .research-list { max-width: 1280px; margin: 0 auto; border-top: 0; }
+      .research-card { display: block; min-height: 0; padding: 32px 0; cursor: pointer; }
+      .research-card h2 { font-size: clamp(29px, 3.3vw, 47px); }
+      .research-number, .research-card p, .card-arrow, .research-note { display: none; }
+      .research-card summary { list-style: none; display: flex; align-items: center; justify-content: space-between; }.research-card summary::-webkit-details-marker { display: none; }
+      .research-card summary::after { content: '+'; font-size: 32px; font-weight: 300; }.research-card[open] summary::after { content: '−'; }
+      .research-card .area-description { display: block; max-width: 100%; margin: 20px 0 4px; color: #52605a; font-size: 16px; line-height: 1.72; }
     </style>
   </head>
   <body>
     <main>
       <header class="site-header">
-        <a class="wordmark" href="#home" aria-label="Peng (Andy) Liu home"><strong>Peng (Andy) Liu</strong></a>
-        <nav aria-label="Main navigation"><a href="#home">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a></nav>
+        <a class="wordmark" href="index.html" aria-label="Andy Liu home"><strong>Andy Liu</strong></a>
+        <nav aria-label="Main navigation"><a href="#home">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="journey.html">Journey</a></nav>
       </header>
       <section class="hero" id="home">
-        <div class="hero-grid"><div><h1 class="intro-name">Andy Peng Liu</h1><p class="intro-role">Lecturer, focused on Operations Management</p><div class="intro-details"><p>Department of Mechanical Engineering</p><p>Hunan University of Technology</p><p>Contact: <a href="mailto:liuxp@hut.edu.cn">liuxp@hut.edu.cn</a> — <a href="mailto:liuxp@hnu.edu.cn">liuxp@hnu.edu.cn</a></p></div><div class="intro-links"><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=Waus3XwAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0003-0127-5025" target="_blank" rel="noreferrer">ORCID</a><a href="https://machine.hut.edu.cn/info/1627/24286.htm" target="_blank" rel="noreferrer">Chinese Website</a></div></div><div class="portrait-placeholder">Portrait forthcoming</div></div>
-        <div class="bio-row"><p>I am a Lecturer in the Department of Mechanical Engineering at Hunan University of Technology. I received my Ph.D. in Mechanical Engineering from Hunan University. My research interests include production and operations management, analytical modeling, and strategic decision-making.</p></div>
+        <div class="hero-grid"><div><h1 class="intro-name">Peng (Andy) Liu</h1><p class="intro-role">Lecturer, focused on Operations Management</p><div class="intro-details"><p>School of Mechanical Engineering</p><p>Hunan University of Technology</p><p>Contact: <a href="mailto:liuxp@hut.edu.cn">liuxp@hut.edu.cn</a> — <a href="mailto:liuxp@hnu.edu.cn">liuxp@hnu.edu.cn</a></p></div><div class="intro-links"><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=Waus3XwAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0003-0127-5025" target="_blank" rel="noreferrer">ORCID</a><a href="https://machine.hut.edu.cn/info/1627/24286.htm" target="_blank" rel="noreferrer">Chinese Website</a></div></div><div class="portrait-placeholder">Portrait forthcoming</div></div>
+        <div class="bio-row"><p>I am a Lecturer in the <a class="school-link" href="https://machine.hut.edu.cn/" target="_blank" rel="noreferrer">School of Mechanical Engineering</a> at <a class="school-link" href="https://www.hut.edu.cn/" target="_blank" rel="noreferrer">Hunan University of Technology</a>. I received my Ph.D. in Mechanical Engineering from Hunan University. My research interests include production and operations management, analytical modeling, and strategic decision-making.</p></div>
       </section>
-      <section class="research-section" id="research"><div class="section-label"><span>Research Areas</span><span>01 — 02</span></div><div class="research-list">
-        <article class="research-card"><span class="research-number">01</span><div><h2>Tariff</h2><p>Research on trade policy, strategic interaction, and operational decision-making.</p></div><a class="card-arrow" href="research.html">↗</a></article>
-        <article class="research-card"><span class="research-number">02</span><div><h2>Food Recovery Networks</h2><p>Research on designing and coordinating networks for food recovery and redistribution.</p></div><a class="card-arrow" href="research.html">↗</a></article>
-      </div><div class="research-note"><p>Publications, working papers, and replication materials will appear here.</p><span>Research page in preparation</span></div></section>
+      <section class="research-section" id="research"><div class="section-label"><span>Research Areas</span><span></span></div><div class="research-list">
+        <details class="research-card"><summary><h2>Tariff</h2></summary><p class="area-description">I view tariffs not only as trade-policy instruments, but also as operational forces that reshape firms&apos; costs, pricing, sourcing, and production decisions. My interest is in how tariff changes alter strategic interactions across supply chains and, ultimately, firms&apos; operational choices.</p></details>
+        <details class="research-card"><summary><h2>Food Recovery Networks</h2></summary><p class="area-description">I view food recovery networks as a coordination and allocation problem. Decisions about recipient sourcing, matching, and the balance between quantity and variety affect both system performance and the social value created by food recovery.</p></details>
+      </div></section>
     </main>
   </body>
 </html>

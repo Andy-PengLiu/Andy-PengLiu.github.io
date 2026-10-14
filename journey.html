@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journey | Andy Peng Liu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .site-header { padding-left: 3.5vw; padding-right: 3.5vw; }
+      .wordmark { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; letter-spacing: -.02em; }.wordmark span { display: none; }
+      nav { margin-left: auto; gap: 30px; font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 400; }
+      .journey-page { max-width: 1280px; margin: 0 auto; padding: 9vh 3.5vw; }.journey-page h1 { width: 100%; max-width: none; box-sizing: border-box; margin: 0; padding-bottom: 30px; border-bottom: 1px solid #172d2a; font-size: clamp(54px, 7vw, 96px); white-space: nowrap; }
+      .milestones { margin-top: 70px; }
+      .milestone { padding: 0 0 76px; margin: 0 0 76px; border-bottom: 1px solid #d7d8d0; }.milestone:last-child { margin-bottom: 0; border-bottom: 0; }
+      .photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }.photo-grid.two-photos, .photo-grid.half-photo { grid-template-columns: repeat(2, minmax(0, 1fr)); }.photo-grid.one-photo { grid-template-columns: minmax(0, 1fr); }
+      .photo-grid img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #e5e8e1; }.photo-grid .show-entire-photo { height: auto; aspect-ratio: auto; object-fit: initial; background: transparent; }.milestone h2 { margin: 28px 0 0; font-size: clamp(30px, 3.4vw, 46px); }.milestone p { max-width: 690px; margin: 14px 0 0; color: #52605a; font-size: 16px; line-height: 1.7; }
+      @media (max-width: 820px) { .journey-page h1 { white-space: normal; }.photo-grid, .photo-grid.two-photos { grid-template-columns: 1fr; }.milestone { padding-bottom: 52px; margin-bottom: 52px; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header"><a class="wordmark" href="index.html"><strong>Andy Liu</strong></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="journey.html">Journey</a></nav></header>
+    <main class="journey-page"><h1>Milestones along the way.</h1>
+      <section class="milestones">
+        <article class="milestone"><div class="photo-grid half-photo"><img src="images/journey/master-graduation.jpg" alt="Master's graduation" /></div><h2>Master&apos;s graduation</h2><p>A milestone that marked the beginning of my academic journey and a deeper interest in research and operations.</p></article>
+        <article class="milestone"><div class="photo-grid"><img src="images/journey/liverpool-visit-1.jpg" alt="2024 Ph.D. Summer School on Operations and Supply Chain Management" /><img src="images/journey/liverpool-visit-2.jpg" alt="2024 Ph.D. Summer School on Operations and Supply Chain Management" /><img src="images/journey/liverpool-visit-3.jpg" alt="2024 Ph.D. Summer School on Operations and Supply Chain Management" /></div><h2>2024 Ph.D. Summer School on Operations and Supply Chain Management</h2><p>A Ph.D. Summer School at the University of Liverpool Management School, providing an opportunity to exchange ideas and broaden my research perspective.</p></article>
+        <article class="milestone"><div class="photo-grid two-photos"><img src="images/journey/phd-graduation-1.jpg" alt="Ph.D. graduation" /><img src="images/journey/phd-graduation-2.jpg" alt="Ph.D. graduation" /></div><h2>Ph.D. graduation</h2><p>Completing my doctoral studies in Mechanical Engineering at Hunan University and beginning the next stage of my academic career.</p></article>
+        <article class="milestone"><div class="photo-grid"><img class="show-entire-photo" src="images/journey/hut-lecturer.jpg" alt="Hunan University of Technology" /></div><h2>Joining Hunan University of Technology</h2><p>Beginning my academic career as a Lecturer in the School of Mechanical Engineering, with a focus on operations management research and teaching.</p></article>
+      </section>
+    </main>
+  </body>
+</html>
