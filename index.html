@@ -10,8 +10,15 @@
       .site-header { justify-content: space-between; }
       .wordmark { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; letter-spacing: -.02em; }
       .wordmark span, .contact-link { display: none; }
-      nav { margin-left: auto; gap: 30px; font-size: 13px; }
+      nav { margin-left: auto; gap: 30px; font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: 400; }
       .hero > .eyebrow { display: none; }
+      .intro-name { font-size: clamp(46px, 5.4vw, 82px); }
+      .intro-role { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; color: #527868; }
+      .intro-details { margin-top: 28px; font-size: 15px; line-height: 1.7; color: #52605a; }
+      .intro-details p { margin: 0; }
+      .intro-links { margin-top: 25px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .intro-links a, .intro-links span { border-bottom: 1px solid #172d2a; padding-bottom: 3px; font-size: 13px; }
+      .portrait-placeholder { min-height: 390px; display: flex; align-items: flex-end; padding: 22px; background: #e5e8e1; color: #66736b; font-size: 11px; text-transform: uppercase; letter-spacing: .11em; }
     </style>
   </head>
   <body>
@@ -21,8 +28,8 @@
         <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#research">Research</a><a href="#teaching">Teaching</a></nav>
       </header>
       <section class="hero" id="home">
-        <div class="hero-grid"><div><p class="intro-line">Peng (Andy) Liu</p><h1>Operations problems are strategic problems.</h1></div><div class="hero-copy"><p>I study how firms, platforms, and institutions make operational decisions when incentives, information, and competition interact.</p><p class="role">Assistant Professor of Operations Management<br />Institutional affiliation forthcoming</p></div></div>
-        <div class="hero-footer"><span>Researching strategy through analytical models</span><a href="#research">Explore research <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-grid"><div><h1 class="intro-name">Peng (Andy) Liu</h1><p class="intro-role">Lecturer, focused on Operations Management</p><div class="intro-details"><p>Department of Mechanical Engineering</p><p>Hunan University of Technology</p><p>Contact: <a href="mailto:liuxp@hut.edu.cn">liuxp@hut.edu.cn</a> — <a href="mailto:liuxp@hnu.edu.cn">liuxp@hnu.edu.cn</a></p></div><div class="intro-links"><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=Waus3XwAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0003-0127-5025" target="_blank" rel="noreferrer">ORCID</a><span>Chinese Website forthcoming</span></div></div><div class="portrait-placeholder">Portrait forthcoming</div></div>
+        <div class="hero-footer"><span>Operations Management · Game Theory</span><a href="#research">Explore research <span aria-hidden="true">↓</span></a></div>
       </section>
       <section class="research-section" id="research"><div class="section-label"><span>Selected research areas</span><span>01 — 03</span></div><div class="research-list">
         <article class="research-card"><span class="research-number">01</span><div><h2>Platform Operations &amp; Market Design</h2><p>How platforms structure incentives, information, and participation in multi-sided markets.</p></div><span class="card-arrow">↗</span></article>
